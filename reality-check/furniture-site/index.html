@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reality check - Furniture site</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="switcher wrapper">
+      <picture class="decorative-image">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            images/graphic-shallow.jpg    1x,
+            images/graphic-shallow-2x.jpg 2x
+          "
+        />
+        <source srcset="images/graphic.jpg 1x, images/graphic-2x.jpg 2x" />
+        <img src="images/graphic-shallow.jpg" alt="" />
+      </picture>
+      <div class="content repel" data-repel-variant="vertical">
+        <header class="site-head repel">
+          <p class="site-head__name">spaziovisia</p>
+          <p>Elevate your space</p>
+        </header>
+        <article class="flow">
+          <h1>A tribute to ancient handicrafts</h1>
+          <p>
+            The materials are simple and completely natural, the internal
+            structure of the stem consists of hundreds of cavities, which makes
+            it strong and light.
+          </p>
+          <p>
+            <a href="#" class="icon-link">
+              <span>Explore Kettal collection</span>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 25"
+              >
+                <g>
+                  <path
+                    fill="currentColor"
+                    d="m16.172 11.5-5.364-5.364 1.414-1.414L20 12.5l-7.778 7.778-1.414-1.414 5.364-5.364H4v-2h12.172Z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </p>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

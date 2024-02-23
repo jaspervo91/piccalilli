@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reality check - Masked hero</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <article class="hero">
+        <h1 class="visually-hidden">Wave</h1>
+        <div class="hero__inner wrapper">
+          <p class="hero__meta"><abbr title="Established">Est.</abbr> 1961</p>
+          <div class="hero__content">
+            <p>
+              We create travels that feel like real adventures — in the most
+              exciting of Earth’s corners.
+            </p>
+            <p>
+              <a href="#">Explore</a>
+            </p>
+          </div>
+          <img
+            src="images/adventure.svg"
+            alt="Adventure, in a nice handwritten-like form with illustrated birds surrounding it."
+            class="hero__decor-text"
+          />
+          <a href="#" class="hero__action">
+            <span class="visually-hidden">Explore surfer stories</span>
+            <figure>
+              <div class="negative-grid">
+                <div class="roundel" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="currentColor" d="m5 4 15 7.928L5 20V4Z" />
+                  </svg>
+                  <img src="images/roundel-text.svg" alt="" />
+                </div>
+                <img src="images/surfer-1.jpg" class="avatar" alt="" />
+                <img src="images/surfer-2.jpg" class="avatar" alt="" />
+              </div>
+              <figcaption class="visually-hidden">
+                Two images of surfers, one surfing on a wave and the other,
+                standing next to their board. A roundel sits next to them with
+                round text, repeated, reading 'surfer stories'.
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="hero__bg">
+          <picture class="hero__masked">
+            <source srcset="images/bg.avif" type="image/avif" />
+            <source srcset="images/bg.webp" type="image/webp" />
+            <img
+              src="images/bg.jpg"
+              loading="eager"
+              alt="A mountain range with a sunrise, coming from behind the camera, reflecting off them."
+            />
+          </picture>
+          <img
+            src="images/bg.svg"
+            loading="eager"
+            alt="A low fidelity vector drawing of the mountain range"
+            class="hero__mask"
+          />
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
